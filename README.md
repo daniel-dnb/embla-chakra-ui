@@ -1,50 +1,61 @@
-# React + TypeScript + Vite
+# Embla Carousel with Vite, Chakra UI, and Compound Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates the integration of the [Embla Carousel](https://www.embla-carousel.com/) with [Vite](https://vitejs.dev/) and [Chakra UI](https://chakra-ui.com/), using the **Compound Components Pattern** to create flexible and reusable components.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Embla Carousel**: A performant and lightweight carousel library.
+- **Vite**: Fast development environment with hot module replacement (HMR).
+- **Chakra UI**: A modular component library for building accessible and customizable React applications.
+- **Compound Components Pattern**: Provides flexibility and a clean API for building reusable components.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: For building the user interface.
+- **Vite**: As the build tool and development server.
+- **Chakra UI**: For UI components and styling.
+- **Embla Carousel**: For the carousel functionality.
 
-- Configure the top-level `parserOptions` property like this:
+## Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/daniel-dnb/embla-chakra-ui.git
+   cd embla-carousel
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pnpm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   pnpm dev
+   ```
+
+4. Open your browser and navigate to `http://localhost:5173`.
+
+## Project Structure
+
+```
+.
+├── public                   # Static assets
+├── src
+│   ├── components
+│   │   └──EmblaCarousel     # Embla carousel compound components pattern
+│   ├── hooks                # Custom embla carousel hooks
+│   ├── theme                # Chakra UI theme
+│   ├── App.tsx              # Main app component
+│   └── main.tsx             # Entry point for the app
+├── index.html
+├── package.json
+└── README.md
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## License
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Feel free to submit issues and pull requests!
