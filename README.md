@@ -22,7 +22,7 @@ This project demonstrates the integration of the [Embla Carousel](https://www.em
 
    ```bash
    git clone https://github.com/daniel-dnb/embla-chakra-ui.git
-   cd embla-carousel
+   cd embla-chakra-ui
    ```
 
 2. Install dependencies:
