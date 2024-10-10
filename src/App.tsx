@@ -1,4 +1,4 @@
-import { Box, Image } from "@chakra-ui/react";
+import { Image } from "@chakra-ui/react";
 import useEmblaCarousel from "embla-carousel-react";
 import { EmblaCarousel } from "./components/EmblaCarousel";
 import { useDotButton } from "./hooks/useDotButton";
