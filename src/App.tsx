@@ -32,16 +32,13 @@ function App() {
         <EmblaCarousel.SliderContainer>
           {IMAGES.map((src, i) => (
             <EmblaCarousel.Slider key={i}>
-              <Box h="full" w="full">
-                <Image
-                  src={src}
-                  objectFit="cover"
-                  objectPosition="center"
-                  aspectRatio="16/9"
-                  w="full"
-                  h="full"
-                />
-              </Box>
+              <Image
+                src={src}
+                objectFit="cover"
+                objectPosition="center"
+                w="full"
+                h="full"
+              />
             </EmblaCarousel.Slider>
           ))}
         </EmblaCarousel.SliderContainer>
